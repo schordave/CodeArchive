@@ -17,6 +17,8 @@
 ; #                                                                       #
 ; #               This alias ONLY supports the ISO-8859-1 character set.  #
 ; #                                                                       #
+; # COMPLIANCE:   ISO/IEC 8859-1                                          #
+; #                                                                       #
 ; # EXAMPLES:                                                             #
 ; #               1) Main Example:                                        #
 ; #                                                                       #
