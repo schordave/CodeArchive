@@ -1,5 +1,3 @@
-;Package Sysinfo.Hardware.Printer
-;Last updated on 01/07/09
 ; #########################################################################
 ; #  (c) 2006-2013, David Schor          [Licensed under the MIT license] #
 ; #                                      [See LICENSE.mrc for details.  ] #
