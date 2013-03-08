@@ -1,10 +1,6 @@
 ; /~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\
 ; |                                                                        |
-; | The following script files,                                            |
-; |                                                                        |
-; | - html2ascii.mrc                                                       |
-; |                                                                        |
-; | are licensed under the following license (MIT):                        |
+; | Unless otherwise noted, ALL scripts are under MIT license:             |
 ; |                                                                        |
 ; |                                                                        |
 ; |      Copyright © 2002-2013 David Schor                                 |
