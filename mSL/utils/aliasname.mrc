@@ -15,7 +15,7 @@
 ; #                   echo -a $($aname,2)                                   #
 ; #                }                                                        #
 ; #                                                                         #
-; # Info:                                                                   #
+; # INFO:                                                                   #
 ; #               $($aName,2) is a short-hand version of the following full #
 ; #               script: $aliasName($scriptline, $script).                 #
 ; #                                                                         #
