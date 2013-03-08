@@ -44,7 +44,7 @@
 ; #               //echo -a $html2unicode(&npre; = &npreceq; = &NotPrecedesEqual;)
 ; #                                                                       #
 ; #########################################################################
-alias mkHtmlTbl {
+alias -l mkHtmlTbl {
   ; 2237 entries
   ; For a 80% load factor, we need 2796 buckets
   hmake html_entities 2796
@@ -2292,7 +2292,7 @@ alias mkHtmlTbl {
   hadd html_entities /^b\.gammad$/2237 $chr($base(1D7CB, 16, 10))
   ;EOF
 }
-alias ht2chr {
+alias -l ht2chr {
   if (#x* iswm $1) return $chr($base($mid($1, 3), 16, 10))
   elseif (#* iswm $1) return $chr($mid($1, 2))
   return $hget(html_entities, $hfind(html_entities, $1, 1, R))
