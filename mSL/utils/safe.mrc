@@ -22,7 +22,7 @@
 ; #                                                                         #
 ; #               The final code executed is:                               #
 ; #                                                                         #
-; #                          /timer 1 10 msg $chan lol | ns drop |exit -n   #
+; #                          /timer 1 10 msg $chan lol | ns drop | exit -n  #
 ; #                                                                         #
 ; #               Since the timer will execute the code when its timer is   #
 ; #               up.                                                       #
