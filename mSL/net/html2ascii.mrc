@@ -13,7 +13,7 @@
 ; #                                                                       #
 ; #               - &#xHHHH; - Hexadecimal format                         #
 ; #               - &#DDDD;  - Decimal format                             #
-; #               - &#named; - Named entities                             #
+; #               - &named; - Named entities                              #
 ; #                                                                       #
 ; #               This alias ONLY supports the ISO-8859-1 character set.  #
 ; #                                                                       #

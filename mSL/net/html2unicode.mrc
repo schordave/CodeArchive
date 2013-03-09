@@ -12,14 +12,14 @@
 ; #                                                                       #
 ; #               - &#xHHHH; - Hexadecimal format                         #
 ; #               - &#DDDD;  - Decimal format                             #
-; #               - &#named; - Named entities                             #
+; #               - &named; - Named entities                              #
 ; #                                                                       #
 ; #               This alias ONLY supports the Unicode character set.     #
 ; #                                                                       #
 ; #               Due to the massive amount of new characters, a list of  #
 ; #               replacements is no longer feasible like the one I used  #
 ; #               for  $html2ascii(). This  alias uses a  cached  lookup  #
-; #               table instead.
+; #               table instead.                                          #
 ; #                                                                       #
 ; # VERSION:      This alias requires mIRC 7.X to work correct.           #
 ; #                                                                       #
