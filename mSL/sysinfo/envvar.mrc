@@ -83,7 +83,7 @@ alias envvar {
 
   ; com errors
   :err
-  else echo -esctg info * Com Error $com(%c).error - $com(%c).errortext $com(%c).argerr $+ : $!envvar
+  echo -esctg info * Com Error $com(%c).error - $com(%c).errortext $com(%c).argerr $+ : $!envvar
   if ($com(%c)) .comclose %c
   halt
 }
