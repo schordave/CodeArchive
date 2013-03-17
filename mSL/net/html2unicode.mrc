@@ -21,6 +21,9 @@
 ; #               for  $html2ascii(). This  alias uses a  cached  lookup  #
 ; #               table instead.                                          #
 ; #                                                                       #
+; #               If performance is required, then the $html2ascii() will #
+; #               easily outperform this alias by a longshot.             #
+; #                                                                       #
 ; # VERSION:      This alias requires mIRC 7.X to work correct.           #
 ; #                                                                       #
 ; # COMPLIANCE:   - Unicode 5.4                                           #
@@ -29,11 +32,11 @@
 ; # EXAMPLES:                                                             #
 ; #               1) Main Example:                                        #
 ; #                                                                       #
-; #                //echo -a $HTML2ASCII(th&amp;is is a&quot; te&#245;&#245;&#245;&#245;st &lt;lol tag&gt; this r &copy; and &reg; &raquo;Wiz126&laquo; &#84;&#104;&#105;&#115; is a T&ecirc;&#115;t &szlig;&Ouml;&Ouml;&Ouml;! Wiz126 &yuml;&agrave;&#104;&oacute;&ocirc;&iexcl; BTW HTML Entities Are case-insensitive! Agrave != agrave see this: &Agrave; != &agrave;)
+; #                //echo -a $html2unicode(th&amp;is is a&quot; te&#245;&#245;&#245;&#245;st &lt;lol tag&gt; this r &copy; and &reg; &raquo;Wiz126&laquo; &#84;&#104;&#105;&#115; is a T&ecirc;&#115;t &szlig;&Ouml;&Ouml;&Ouml;! Wiz126 &yuml;&agrave;&#104;&oacute;&ocirc;&iexcl; BTW HTML Entities Are case-insensitive! Agrave != agrave see this: &Agrave; != &agrave;)
 ; #                                                                       #
 ; #               2) Same Char Example:                                   #
 ; #                                                                       #
-; #               //echo -a $html2ascii(1/2 = &frac12; = &#xBD; = &#189;) #
+; #               //echo -a $html2unicode(1/2 = &frac12; = &#xBD; = &#189;)
 ; #                                                                       #
 ; #               3) HTML 5 has 1-to-many mapping                         #
 ; #                                                                       #
