@@ -34,13 +34,13 @@
  *
  */
 #include <stddef.h>
-size_t __fastcall strlen(const char *_str)
+size_t __fastcall strlen(const char *s)
 {
     __asm {
         ; our character pointer goes in edx
-            mov edx, _str
+            mov edx, s
         
-        ; clear xmmo0
+        ; clear xmm0
             pxor xmm0, xmm0
             
         ; start at -16 so we could do the loop more efficiently by
@@ -78,6 +78,7 @@ size_t __fastcall strlen(const char *_str)
             ; against our null vecter.
             ;
             ; ZFlag – Set if any byte/word of xmm2/mem128 is null, reset otherwise
+            ;
             PcmpIstrI xmm0, oword ptr[edx + eax], 1000b
             
             ; If we didn't encounter a null byte, just keep going
