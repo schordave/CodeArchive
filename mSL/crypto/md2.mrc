@@ -1,7 +1,7 @@
-;Last updated on 01/07/09
+;Last updated on 09/07/13
 /*
 ***************************************************************
-**                                   David Schor 2004-2009   **
+**                                   David Schor 2004-2013   **
 **                                                           **
 **                MD2 Message-Digest Algorithm               **
 **               ------------------------------              **
@@ -18,7 +18,7 @@
 **                                                           **
 **   An implementation of the MD2 message digest algorithm   **
 **                                                           **
-**   + This should not be used for not applications          **
+**   + This should not be used for real applications         **
 **   + This is here for compatibility only!                  **
 **                                                           **
 ** * Please note:                                            **
@@ -64,7 +64,7 @@ Alias MD2 {
         bcopy &message 1 $1 1 $v1
       }
       else {
-        echo $color(info) -ae * Invalid parameters: $!md2
+        echo -aec info * Invalid parameters: $!md2
         halt
       }
     }
@@ -75,7 +75,7 @@ Alias MD2 {
         bread $1 0 $lof($1) &message
       }
       else  {
-        echo $color(info) -ae * Error accessing file: $!md2
+        echo -aec info * Error accessing file: $!md2
         halt
       }
     }
@@ -84,13 +84,13 @@ Alias MD2 {
     if (%pad) {
       /* null string needs to be taken care on its own due to mIRC's null var problem
       */
-      bcopy &message $calc($bvar(&message, 0) + 1) $Pedding(16) 1 -1
+      bcopy &message $calc($bvar(&message, 0) + 1) $Padding(16) 1 -1
     }
     else {
       ;pedding, if needed (MOD 16, for 128 bit)
       if ($calc($bvar(&message, 0) % 16)) {
         ;pedding is needed
-        bcopy &message $calc($bvar(&message, 0) + 1) $Pedding($calc(16 - ($v1 % 16))) 1 -1
+        bcopy &message $calc($bvar(&message, 0) + 1) $Padding($calc(16 - ($v1 % 16))) 1 -1
       }
     }
 
@@ -112,15 +112,15 @@ Alias MD2 {
   }
 }
 
-/* Pedding for the message
+/* Padding for the message
 */
-Alias Pedding {
+Alias Padding {
   if ($0) {
     bset &pedding 1 $str($+($mid(0 $+ $1, -2), $chr(32)), $1)
     return &pedding
   }
   else {
-    echo $color(info) -es * Invalid parameters: $!Pedding
+    echo -esc info * Invalid parameters: $!Padding
   }
 }
 
