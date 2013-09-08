@@ -87,9 +87,9 @@ Alias MD2 {
       bcopy &message $calc($bvar(&message, 0) + 1) $Padding(16) 1 -1
     }
     else {
-      ;pedding, if needed (MOD 16, for 128 bit)
+      ;padding, if needed (MOD 16, for 128 bit)
       if ($calc($bvar(&message, 0) % 16)) {
-        ;pedding is needed
+        ;padding is needed
         bcopy &message $calc($bvar(&message, 0) + 1) $Padding($calc(16 - ($v1 % 16))) 1 -1
       }
     }
@@ -116,8 +116,8 @@ Alias MD2 {
 */
 Alias Padding {
   if ($0) {
-    bset &pedding 1 $str($+($mid(0 $+ $1, -2), $chr(32)), $1)
-    return &pedding
+    bset &padding 1 $str($+($mid(0 $+ $1, -2), $chr(32)), $1)
+    return &padding
   }
   else {
     echo -esc info * Invalid parameters: $!Padding
@@ -155,8 +155,6 @@ Alias -l checkSum {
 * constructed from digits of pi.
 */
 Alias Perm {
-
-
   var %PermTable = $&
     41,46,67,201,162,216,124,1,61,54,84,161,236,240,6,19, $&
     98,167,5,243,192,199,115,140,152,147,43,217,188,76,130,202, $&
@@ -176,8 +174,6 @@ Alias Perm {
     49,68,80,180,143,237,31,26,219,153,141,51,159,17,131,20
   return $gettok(%PermTable, $calc($1 + 1), 44)
 }
-
-
 
 
 Alias computeMD {
