@@ -1,0 +1,23 @@
+OpenOffice.org uses a single open-source license for the source code and a separate documentation license for most documents published on the website without the intention of being included in the product. The source-code license is the GNU Lesser General Public License. Effective OpenOffice.org 3.0 Beta, OpenOffice.org will use the LGPL v3. The document license is the Public Document License (PDL).
+
+Works beside code donated to the project under cover of the Sun Microsystems Inc. Contributor Agreement (SCA) are held jointly by Sun Microsystems for the project under the project's prevailing license, in this case, the LGPL v.3. Even if you have already submitted a copyright agreement (e.g., the SCA or its predecessors), you may also sign the PDL per work contributed, in which case the PDL takes precendence. In some cases, we also permit the use of the Creative Commons Attribution License ("Attribution-NoDerivs 2.5"). See below for details on the circumstances of using this license.
+
+Copies of the licenses are available. The PDL is in a static and editable form, so that it can be used as designed:
+
+    * Public Document License (PDL) PDF | HTML | RTF (text)
+    * GNU Lesser General Public License v3 (LGPL) (Effective with OpenOffice.org 3.0 Beta) 
+
+You can freely modify, extend, and improve the OpenOffice.org source code. The LGPL requires that all changes must be made available if published. For more information on the LGPL, please also visit the Free Software Foundation's FAQ: http://www.gnu.org/licenses/gpl-faq.html.
+
+Code
+
+In order to contribute code to the project, you must sign and submit the Sun Microsystems Inc. Contributor Agreement (SCA). This agreement jointly assigns copyright over your work to yourself and to Sun Microsystems. Details are available on the "Contributing" page, and you can find a pdf of the SCA there. If you have questions on how it works, the FAQ: Licensing section should answer them. The page also has guidelines on the use of the licenses. If these don't help, send a note to the Community Manager.
+
+Other Works
+
+Our preference is always for contributions of editable work. But in those cases where editable material is difficult to obtain, there are several options; all presume you hold copyright in the work:
+
+    * You can sign the SCA, which covers all work (and not just code) contributed to OpenOffice.org by you;
+    * If your country's laws allow it, you can make it public domain by declaring as much in a signed document (check if it is possible, first!); or
+    * You can use the Creative Commons Attribution License ("Attribution-NoDerivs 2.5"). We only accept work under this license that is non-editable and for which there is no editable version that can be contributed to the project.
+

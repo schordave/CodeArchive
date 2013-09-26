@@ -1,0 +1,35 @@
+alias -l path_dll return mSLSpell.dll
+alias -l path_dic return Dictionary\en_US.dic
+alias -l path_aff return Dictionary\en_US.aff
+
+alias -l hunspell_set_dictionary noop $dll($path_dll, hunspell_set_dictionary, $noqt($1-))
+alias -l hunspell_has_dictionary return $dll($path_dll, hunspell_has_dictionary,)
+alias -l hunspell_set_affix noop $dll($path_dll, hunspell_set_affix, $noqt($1-))
+alias -l hunspell_has_affix return $dll($path_dll, hunspell_has_affix,)
+alias -l hunspell_initialize noop $dll($path_dll, hunspell_initialize,)
+alias -l hunspell_uninitialize noop $dll($path_dll, hunspell_uninitialize,)
+alias -l hunspell_inited return $dll($path_dll, hunspell_inited,)
+alias -l hunspell_spell return $dll($path_dll, hunspell_spell, $1-)
+alias -l hunspell_suggest return $dll($path_dll, hunspell_suggest, $1-)
+
+alias spellcheck {
+  if (!$hunspell_inited) {
+    hunspell_set_dictionary $path_dic
+    hunspell_set_affix $path_aff
+    hunspell_initialize
+  }
+
+  var %word = hous
+  if (!$hunspell_spell(%word)) {
+    var %i = 1
+    echo -a $qt(%word) is spelled wrong!
+    while ($hunspell_suggest(%i)) {
+      var %s = %s $v1
+      inc %i
+    }
+    echo -a Try: %s
+  }
+
+  hunspell_uninitialize
+}
+

@@ -1,0 +1,13 @@
+LIBRARY mSLSpell
+EXPORTS
+LoadDll
+UnloadDll
+hunspell_set_dictionary
+hunspell_set_affix
+hunspell_initialize
+hunspell_uninitialize
+hunspell_has_dictionary
+hunspell_has_affix
+hunspell_inited
+hunspell_spell
+hunspell_suggest
