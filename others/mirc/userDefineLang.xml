@@ -1,0 +1,37 @@
+
+<NotepadPlus>
+    <UserLang name="mIRC" ext=".mRC">
+        <Settings>
+            <Global caseIgnored="yes" />
+            <TreatAsSymbol comment="yes" commentLine="yes" />
+            <Prefix words1="no" words2="no" words3="yes" words4="yes" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Delimiters">000000</Keywords>
+            <Keywords name="Folder+">{</Keywords>
+            <Keywords name="Folder-">}</Keywords>
+            <Keywords name="Operators"># ( )</Keywords>
+            <Keywords name="Comment"> 1/* 2*/ 0;</Keywords>
+            <Keywords name="Words1">abook action ajinvite aline ame amsg anick aop auto auser autojoin avoice away background ban bcopy beep bindip bread break breplace bset btrunc bunset bwrite channel clear clearall cline clipboard close cnick color comclose comopen comreg continue copy creq ctcpreply ctcps dcc dccserver dde ddeserver debug dec describe dialog did didtok disable disconnect dlevel dline dll dns dqwindow drawcopy drawdot drawfill drawline drawpic drawrect drawreplace drawrot drawsave drawscroll drawtext ebeeps echo editbox emailaddr enable events exit fclose filter findtext finger firewall flash flist flood flush flushini fnord font fopen fseek fsend fserve fullname fwrite ghide gload gmove gopts goto gplay gpoint gqreq groups gshow gsize gstop gtalk gunload guser hadd halt haltdef hdec hdel help hfree hinc hload hmake hop hsave ial ialclear ialmark identd ignore iline inc iuser join linesep links list load loadbuf localinfo log mdi me menubar mkdir mnick mode msg noop notify notice omsg onotice partall pdcc perform play playctrl pop protect pvoice qme qmsg query queryrn raw reload remini remote remove rename renwin reseterror resetidle return rlevel rline rmdir run ruser save savebuf saveini say scid scon server set showmirc signal sline sockaccept sockclose socklist socklisten sockmark sockopen sockread sockrename sockudp sockwrite sound speak splay sreq strip switchbar timer timestamp titlebar tnick tokenize toolbar tray treebar ulist unload unset unsetall updatenl url uwho var vcadd vcmd vcrem vol while window winhelp write writeini xyzzy</Keywords>
+            <Keywords name="Words2">! == === != &lt; &gt; &gt;= &lt;= // \\ &amp; isin isincs iswm iswmcs isnum isletter isalnum isalpha islower isupper ison isop ishop isvoice isreg ischan isban isaop isavoice isignore isprotect isnotify Alias if else elseif on</Keywords>
+            <Keywords name="Words3">$ -</Keywords>
+            <Keywords name="Words4">% &amp;</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" styleID="11" fgColor="000000" bgColor="FFFFFF" fontName="Dotum" fontStyle="0" fontSize="8" />
+            <WordsStyle name="FOLDEROPEN" styleID="12" fgColor="FF0000" bgColor="FFFFFF" fontName="" fontStyle="1" fontSize="10" />
+            <WordsStyle name="FOLDERCLOSE" styleID="13" fgColor="FF0000" bgColor="FFFFFF" fontName="" fontStyle="1" fontSize="10" />
+            <WordsStyle name="KEYWORD1" styleID="5" fgColor="000080" bgColor="FFFFFF" fontName="" fontStyle="0" fontSize="8" />
+            <WordsStyle name="KEYWORD2" styleID="6" fgColor="FF8040" bgColor="FFFFFF" fontName="" fontStyle="0" fontSize="9" />
+            <WordsStyle name="KEYWORD3" styleID="7" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD4" styleID="8" fgColor="804000" bgColor="FFFFFF" fontName="" fontStyle="2" />
+            <WordsStyle name="COMMENT" styleID="1" fgColor="408080" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT LINE" styleID="2" fgColor="008040" bgColor="FFFFFF" fontName="" fontStyle="2" />
+            <WordsStyle name="NUMBER" styleID="4" fgColor="FF0080" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="OPERATOR" styleID="10" fgColor="FF0000" bgColor="FFFFFF" fontName="" fontStyle="1" fontSize="9" />
+            <WordsStyle name="DELIMINER1" styleID="14" fgColor="004000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER2" styleID="15" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER3" styleID="16" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>
